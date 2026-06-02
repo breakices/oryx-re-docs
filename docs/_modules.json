@@ -1,0 +1,72 @@
+[
+  {
+    "gn": "01",
+    "title": "内核与启动骨架",
+    "sub": "backend/app · kernel / 入口 / lib / jobs",
+    "fname": "01-g1.md",
+    "files": 16
+  },
+  {
+    "gn": "02",
+    "title": "数据层：领域实体 + 持久化",
+    "sub": "backend/app · domain / db",
+    "fname": "02-g2.md",
+    "files": 15
+  },
+  {
+    "gn": "03",
+    "title": "横切关注 + 基础设施",
+    "sub": "backend/app · capabilities / infra",
+    "fname": "03-g3.md",
+    "files": 11
+  },
+  {
+    "gn": "04",
+    "title": "核心对话编排（应用心脏）",
+    "sub": "backend/app/features · chat / compact",
+    "fname": "04-g4.md",
+    "files": 9
+  },
+  {
+    "gn": "05",
+    "title": "Agent 派生与工具执行",
+    "sub": "backend/app/features · sub_agent / sandbox_runner / shell_tool / web_tool / next_options / pre_inject",
+    "fname": "05-g5.md",
+    "files": 10
+  },
+  {
+    "gn": "06",
+    "title": "通用功能 / Lite 特性 / 平台",
+    "sub": "backend/app/features · workspace / memory / skills / workflows / lite / admin / auth / impersonation",
+    "fname": "06-g6.md",
+    "files": 10
+  },
+  {
+    "gn": "07",
+    "title": "金融子系统",
+    "sub": "backend/app/features · finance / finance_data / finance_memory / finance_portfolio",
+    "fname": "07-g7.md",
+    "files": 9
+  },
+  {
+    "gn": "08",
+    "title": "前端核心：状态 / API / 两条 SSE 流",
+    "sub": "src · types / store / api / hooks",
+    "fname": "08-g8.md",
+    "files": 12
+  },
+  {
+    "gn": "09",
+    "title": "前端组件与 lib 工具",
+    "sub": "src · components / lib",
+    "fname": "09-g9.md",
+    "files": 12
+  },
+  {
+    "gn": "10",
+    "title": "内容 / 样式 / 配置 / 文档",
+    "sub": "backend/skills · backend/workflows · src/styles · 根配置 · docs",
+    "fname": "10-g10.md",
+    "files": 5
+  }
+]

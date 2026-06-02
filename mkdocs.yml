@@ -73,7 +73,18 @@ nav:
   - 架构路线: ROADMAP.md
   - 开发纪律: DEV-MEMO.md
   - 部署指南: DEPLOY.md
-  - 源码导读（HTML）: source-reading-guide.html
+  - 源码导读:
+      - 总览与阅读路线: source-guide/index.md
+      - 01 · 内核与启动骨架: source-guide/01-g1.md
+      - 02 · 数据层（实体+持久化）: source-guide/02-g2.md
+      - 03 · 横切关注 + 基础设施: source-guide/03-g3.md
+      - 04 · 核心对话编排: source-guide/04-g4.md
+      - 05 · Agent 与工具执行: source-guide/05-g5.md
+      - 06 · 通用功能 / Lite / 平台: source-guide/06-g6.md
+      - 07 · 金融子系统: source-guide/07-g7.md
+      - 08 · 前端核心: source-guide/08-g8.md
+      - 09 · 前端组件与 lib: source-guide/09-g9.md
+      - 10 · 内容 / 样式 / 配置: source-guide/10-g10.md
   - 重构记录:
       - v1 · 内核与 features 重组: REFACTOR-260520.md
       - v2 · 三短板与多 pod: REFACTOR-260520-v2.md
