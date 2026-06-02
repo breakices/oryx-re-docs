@@ -1,0 +1,2 @@
+# MkDocs 文档站依赖。固定主要版本以保证 CI 与本地一致。
+mkdocs-material>=9.5,<10

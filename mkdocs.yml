@@ -1,0 +1,83 @@
+site_name: Oryx-RE 开发文档
+site_description: 长程科研任务 Agent —— 架构、开发纪律与源码导读
+site_author: breakices
+# 专用仓库 oryx-re-docs 的项目页地址（决定资源 base 路径，务必与仓库名一致）
+site_url: https://breakices.github.io/oryx-re-docs/
+
+# 源码仓库链接（按需改成你实际的 Oryx-RE 仓库地址；纯展示用，可留可删）
+repo_url: https://github.com/breakices/oryx-re-docs
+repo_name: oryx-re-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections    # 左侧按分组展开
+    - navigation.top         # 回到顶部按钮
+    - navigation.tracking    # URL 跟随锚点
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy      # 代码块一键复制
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+nav:
+  - 概览: index.md
+  - 架构路线: ROADMAP.md
+  - 开发纪律: DEV-MEMO.md
+  - 部署指南: DEPLOY.md
+  - 源码导读（HTML）: source-reading-guide.html
+  - 重构记录:
+      - v1 · 内核与 features 重组: REFACTOR-260520.md
+      - v2 · 三短板与多 pod: REFACTOR-260520-v2.md
+      - v3 · 类型契约与跨切纪律: REFACTOR-260521-v3.md
+  - 前端规范:
+      - 解耦与快速交付: FRONTEND-REFACTOR-260523-v1.md
+      - 样式系统: FRONTEND-STYLE-SYSTEM-260523-v1.md
