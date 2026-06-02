@@ -62,6 +62,11 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+# 272 个逐文件笔记只在索引页里链接、不逐条进 nav，故忽略「未入 nav」告警
+validation:
+  nav:
+    omitted_files: ignore
+
 plugins:
   - search:
       lang:
@@ -85,6 +90,7 @@ nav:
       - 08 · 前端核心: source-guide/08-g8.md
       - 09 · 前端组件与 lib: source-guide/09-g9.md
       - 10 · 内容 / 样式 / 配置: source-guide/10-g10.md
+  - 源码逐文件笔记: source-notes/index.md
   - 重构记录:
       - v1 · 内核与 features 重组: REFACTOR-260520.md
       - v2 · 三短板与多 pod: REFACTOR-260520-v2.md
